@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const SingleProductPage = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default SingleProductPage
+export default SingleProductPage;

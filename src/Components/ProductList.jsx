@@ -10,18 +10,19 @@ const ProductList = ({ products }) => {
     baseOne = 1;
   return (
     <Flex>
-      <Box ><Grid
-        templateColumns={{
-          base: `repeat(${baseOne},${xtraFr})`,
-          md: `repeat(${medium},${xtraFr})`,
-          lg: `repeat(${xtraLN},${xtraFr})`,
-        }}
-        gap={6}
-      >
-        {products.map((el) => (
-          <ProductCard key={el.id} {...el} />
-        ))}
-      </Grid>
+      <Box>
+        <Grid
+          templateColumns={{
+            base: `repeat(${baseOne},${xtraFr})`,
+            md: `repeat(${medium},${xtraFr})`,
+            lg: `repeat(${xtraLN},${xtraFr})`,
+          }}
+          gap={6}
+        >
+          {products?.map((el) => (
+            <ProductCard key={el.id} {...el} />
+          ))}
+        </Grid>
       </Box>
     </Flex>
   );
