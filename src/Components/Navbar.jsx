@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import log1 from "../Assets/log1.svg";
+import Logo from "../Assets/Logo.png";
 // import { BiUserCircle} from "react-icon/bi"
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-logo-container">
-        <img width="100px" src={log1} alt="" />
+        <img width="100px" src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
         <a href="">Home</a>

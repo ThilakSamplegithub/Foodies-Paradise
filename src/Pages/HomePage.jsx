@@ -2,6 +2,11 @@ import React from "react";
 import BannerBackground from "../Assets/home-banner-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
 import Navbar from "../Components/Navbar";
+import About from "../Components/About";
+import Work from "../Components/Work";
+import Testimonial from "../Components/Testimonial";
+import Contact from "../Components/Contact";
+import Footer from "../Components/Footer";
 import { FiArrowRight } from "react-icons/fi";
 
 const HomePage = () => {
@@ -28,6 +33,11 @@ const HomePage = () => {
           <img src={BannerImage} alt="" />
         </div>
       </div>
+      <About />
+      <Work />
+      <Testimonial />
+      <Contact />
+      <Footer />
     </div>
   );
 };
