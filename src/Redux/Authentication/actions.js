@@ -14,14 +14,33 @@ export const signupRequest = (userData) => {
   return async (dispatch) => {
     dispatch({ type: SIGNUP_REQUEST });
     try {
-      await axios.post('https://gorgeous-flight-api1.onrender.com/users', userData);
-      dispatch({ type: SIGNUP_SUCCESS });
+      const response = await axios.get('https://gorgeous-flight-api1.onrender.com/users');
+      const users = response.data;
+
+      
+      const existingUser = users.find(
+        (user) => user.username === userData.username || user.email === userData.email
+      );
+
+      if (existingUser) {
+        throw new Error('Username or email already exists');
+      }
+
+      const createUserResponse = await axios.post('https://gorgeous-flight-api1.onrender.com/users', userData);
+      const newUser = createUserResponse.data;
+
+      if (newUser) {
+        dispatch({ type: SIGNUP_SUCCESS });
+        return true; 
+      } else {
+        throw new Error('Failed to create account');
+      }
     } catch (error) {
       dispatch({ type: SIGNUP_FAILURE, payload: error.message });
+      return false; 
     }
   };
 };
-
 // Signin Actions
 export const signinRequest = (credentials) => {
   return async (dispatch) => {
