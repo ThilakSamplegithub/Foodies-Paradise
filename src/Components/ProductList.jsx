@@ -6,10 +6,11 @@ const ProductList = ({ products }) => {
   console.log(products);
   const xtraLN = 4;
   const xtraFr = "1fr";
-  const medium = 2,
-    baseOne = 1;
+  const medium = 2
+   const baseOne = 1;
   return (
-    <Flex>
+    <Flex gap={"10px"}>
+    <Sidebar/>
       <Box ><Grid
         templateColumns={{
           base: `repeat(${baseOne},${xtraFr})`,
@@ -18,7 +19,7 @@ const ProductList = ({ products }) => {
         }}
         gap={6}
       >
-        {products.map((el) => (
+        {products?.map((el) => (
           <ProductCard key={el.id} {...el} />
         ))}
       </Grid>

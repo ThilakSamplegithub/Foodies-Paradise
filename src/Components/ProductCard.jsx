@@ -1,15 +1,15 @@
 import { Card,CardBody, CardFooter,Button,Divider,Text,Heading,ButtonGroup,Stack,Image, Flex} from '@chakra-ui/react'
 import React from 'react'
-
-const ProductCard = ({name,category,image,price}) => {
+import { Link as RouterLink} from "react-router-dom"
+const ProductCard = ({id,name,category,image,price}) => {
   return (
     <Card maxW='sm'>
   <CardBody>
-    <Image
-      src={image}
+  <RouterLink to={`/singleProductPage/${id}`}> <Image
+      src={image} minH={"250px"}
       alt='Not Available'
       borderRadius='lg'
-    />
+    /></RouterLink>
     <Stack mt='6' spacing='3'>
       <Heading size='md'>{name}</Heading>
       <Text>
@@ -37,10 +37,3 @@ const ProductCard = ({name,category,image,price}) => {
 }
 
 export default ProductCard
-// {
-//   "id": 1,
-//   "name": "Peach - Indian",
-//   "category": "fruit",
-//   "image": "https://www.bigbasket.com/media/uploads/p/m/40218330_1-fresho-peach-indian.jpg?tr=w-3840,q=80",
-//   "price": 150
-// },
