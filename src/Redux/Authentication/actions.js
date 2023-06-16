@@ -53,13 +53,15 @@ export const signinRequest = (credentials) => {
       );
 
       if (user) {
-          dispatch({ type: SIGNIN_SUCCESS,payload: { username: user.username, email: user.email } });
-          console.log(user)
+        dispatch({ type: SIGNIN_SUCCESS, payload: { username: user.username, email: user.email } });
+        console.log(user);
+        return { username: user.username, email: user.email };
       } else {
-        throw new Error('Invalid credentials');
+        throw new Error('Invalid email or password'); 
       }
     } catch (error) {
       dispatch({ type: SIGNIN_FAILURE, payload: error.message });
+      throw error; 
     }
   };
 };

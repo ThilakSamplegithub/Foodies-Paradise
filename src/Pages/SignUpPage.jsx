@@ -115,7 +115,7 @@ const SignUp = () => {
                     type={showPassword ? "text" : "password"}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    size="md" // Decrease the size of the input
+                    size="md" 
                   />
                   <InputRightElement width="3rem">
                     {showPassword ? (
@@ -148,7 +148,7 @@ const SignUp = () => {
                 colorScheme={"blue"}
                 variant={"solid"}
                 onClick={handleSignUp}
-                size="md" // Decrease the size of the button
+                size="md" 
               >
                 Sign up
               </Button>
