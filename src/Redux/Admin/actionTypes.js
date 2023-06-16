@@ -11,3 +11,5 @@ export const deletefail="deletefail"
 export const updatereq="updatereq"
 export const updatesucc="updatesucc"
 export const updatefail="updatefail"
+
+///xsnicma
