@@ -1,4 +1,4 @@
-import { deletefail, deletereq, deletesucc, postfail, postreq, postsucc, updatefail, updatereq, updatesucc } from "./ActionTypes"
+import { deletefail, deletereq, deletesucc, postfail, postreq, postsucc, updatefail, updatereq, updatesucc } from "./actionTypes"
 
 const initialdata={
     isLoading:false,
