@@ -12,5 +12,6 @@ export const MainRoutes=()=>{
         <Route path="/products" element={<ProductPage/>} />
         <Route path="/addToCart" element={<AddToCartPage/>} />
         <Route path="/singleProductPage/:id" element={<SingleProductPage/>}/>
+        <Route path="*" element={<h1>404 PAGE NOT FOUND</h1>} />
     </Routes>
 }
