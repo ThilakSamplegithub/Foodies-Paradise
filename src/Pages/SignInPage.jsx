@@ -31,21 +31,24 @@ const SignIn = () => {
   const navigate = useNavigate();
   const pathComingFrom = location.state?.from?.pathname || '/';
 
-  const handleSignIn = () => {
-    const credentials = { email, password };
+ const handleSignIn = async () => {
+  const credentials = { email, password };
 
-    toast.promise(dispatch(signinRequest(credentials)), {
-      pending: 'Signing in...',
-      success: 'Signed in successfully',
-      error: 'Invalid credentials',
-    })
-      .then(() => {
-        navigate(pathComingFrom, { replace: true });
-      })
-      .catch((error) => {
-        console.log("error")
-      });
-  };
+  try {
+    const response = await dispatch(signinRequest(credentials));
+    const successMessage = 'Signed in successfully';
+
+    if (response.type === 'SIGNIN_FAILURE') {
+      toast.error('Invalid credentials');
+    } else {
+      toast.success(successMessage);
+      navigate(pathComingFrom, { replace: true });
+    }
+  } catch (error) {
+    toast.error('Invalid credentials.');
+  }
+};
+
 
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
