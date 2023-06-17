@@ -5,16 +5,16 @@ import {
   SIGNIN_REQUEST,
   SIGNIN_SUCCESS,
   SIGNIN_FAILURE,
-  LOGOUT
-} from './actionTypes';
+  LOGOUT,
+} from "./actionTypes";
 
 const initialState = {
   signupLoading: false,
   signinLoading: false,
   isAuth: false,
   error: null,
-  username: null, 
-  email: '',
+  username: null,
+  email: "",
 };
 
 const authReducer = (state = initialState, action) => {
@@ -61,7 +61,7 @@ const authReducer = (state = initialState, action) => {
         ...state,
         isAuth: false,
         username: null,
-        email: '',
+        email: "",
       };
     default:
       return state;

@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { Avatar, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react';
-import { logout } from '../Redux/Authentication/actions';
-import { Link } from 'react-router-dom';
-import SignIn from '../Pages/SignInPage';
-import SignUp from '../Pages/SignUpPage';
+import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { Avatar, Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
+import { logout } from "../Redux/Authentication/actions";
+import { Link } from "react-router-dom";
+import SignIn from "../Pages/SignInPage";
+import SignUp from "../Pages/SignUpPage";
 
 const UserLogo = () => {
   const dispatch = useDispatch();
@@ -17,7 +17,6 @@ const UserLogo = () => {
   const handleLogout = () => {
     dispatch(logout());
   };
-
 
   return (
     <>
@@ -38,11 +37,11 @@ const UserLogo = () => {
             </>
           ) : (
             <>
-              <MenuItem>
-                <Link to="/signin">Sign in</Link>
+              <MenuItem as={Link} to="/signin">
+                Sign in
               </MenuItem>
-              <MenuItem>
-                <Link to="/signup">Sign up</Link>
+              <MenuItem as={Link} to="/signup">
+                Sign up
               </MenuItem>
             </>
           )}
