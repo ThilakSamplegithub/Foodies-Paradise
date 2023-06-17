@@ -8,7 +8,6 @@ import {
   SIGNIN_FAILURE,
   LOGOUT,
 } from "./actionTypes";
-
 // Signup Actions
 export const signupRequest = (userData) => {
   return async (dispatch) => {
@@ -62,6 +61,10 @@ export const signinRequest = (credentials) => {
       );
 
       if (user) {
+         if (user.email === "admin@gmail.com" && user.password === "admin") {
+          return "/admin";
+        }
+        
         dispatch({
           type: SIGNIN_SUCCESS,
           payload: { username: user.username, email: user.email },
