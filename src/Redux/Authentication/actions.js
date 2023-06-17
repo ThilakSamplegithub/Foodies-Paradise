@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 import {
   SIGNUP_REQUEST,
   SIGNUP_SUCCESS,
@@ -6,38 +6,43 @@ import {
   SIGNIN_REQUEST,
   SIGNIN_SUCCESS,
   SIGNIN_FAILURE,
-  LOGOUT
-} from './actionTypes';
+  LOGOUT,
+} from "./actionTypes";
 
 // Signup Actions
 export const signupRequest = (userData) => {
   return async (dispatch) => {
     dispatch({ type: SIGNUP_REQUEST });
     try {
-      const response = await axios.get('https://gorgeous-flight-api1.onrender.com/users');
+      const response = await axios.get(
+        "https://gorgeous-flight-api1.onrender.com/users"
+      );
       const users = response.data;
-
-      
+      console.log(users);
       const existingUser = users.find(
-        (user) => user.username === userData.username || user.email === userData.email
+        (user) =>
+          user.username === userData.username || user.email === userData.email
       );
 
       if (existingUser) {
-        throw new Error('Username or email already exists');
+        throw new Error("Username or email already exists");
       }
 
-      const createUserResponse = await axios.post('https://gorgeous-flight-api1.onrender.com/users', userData);
+      const createUserResponse = await axios.post(
+        "https://gorgeous-flight-api1.onrender.com/users",
+        userData
+      );
       const newUser = createUserResponse.data;
 
       if (newUser) {
         dispatch({ type: SIGNUP_SUCCESS });
-        return true; 
+        return true;
       } else {
-        throw new Error('Failed to create account');
+        throw new Error("Failed to create account");
       }
     } catch (error) {
       dispatch({ type: SIGNUP_FAILURE, payload: error.message });
-      return false; 
+      return false;
     }
   };
 };
@@ -46,22 +51,29 @@ export const signinRequest = (credentials) => {
   return async (dispatch) => {
     dispatch({ type: SIGNIN_REQUEST });
     try {
-      const response = await axios.get('https://gorgeous-flight-api1.onrender.com/users');
+      const response = await axios.get(
+        "https://gorgeous-flight-api1.onrender.com/users"
+      );
       const users = response.data;
       const user = users.find(
-        (user) => user.email === credentials.email && user.password === credentials.password
+        (user) =>
+          user.email === credentials.email &&
+          user.password === credentials.password
       );
 
       if (user) {
-        dispatch({ type: SIGNIN_SUCCESS, payload: { username: user.username, email: user.email } });
+        dispatch({
+          type: SIGNIN_SUCCESS,
+          payload: { username: user.username, email: user.email },
+        });
         console.log(user);
         return { username: user.username, email: user.email };
       } else {
-        throw new Error('Invalid email or password'); 
+        throw new Error("Invalid email or password");
       }
     } catch (error) {
       dispatch({ type: SIGNIN_FAILURE, payload: error.message });
-      throw error; 
+      throw error;
     }
   };
 };

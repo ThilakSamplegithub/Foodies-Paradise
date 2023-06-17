@@ -19,7 +19,7 @@ import { useDispatch } from "react-redux";
 import { signupRequest } from "../Redux/Authentication/actions";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import logo from "../Images/logo.png"
+import logo from "../Images/logo.png";
 
 const SignUp = () => {
   const [username, setUsername] = useState("");
@@ -48,8 +48,10 @@ const SignUp = () => {
 
       if (success) {
         toast.success("Account created successfully");
-        navigate("/signin");
-        console.log("Account created");
+        setTimeout(() => {
+          navigate("/signin");
+          console.log("Account created");
+        }, 2000);
       } else {
         toast.error("Username or email already exits");
       }
@@ -68,7 +70,7 @@ const SignUp = () => {
 
   return (
     <>
-      <ToastContainer /> 
+      <ToastContainer />
       <Flex minH={"100vh"} align={"center"} justify={"center"} bg={"gray.100"}>
         <Box
           w={"80%"}
@@ -85,7 +87,7 @@ const SignUp = () => {
                 alt={"Sign Up Image"}
                 objectFit={"cover"}
                 src={logo}
-                h="100%" 
+                h="100%"
               />
             </Flex>
             <Stack spacing={4} w={{ base: "full", md: "50%" }}>
@@ -96,7 +98,7 @@ const SignUp = () => {
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  size="md" 
+                  size="md"
                 />
               </FormControl>
               <FormControl id="email" isRequired>
@@ -105,7 +107,7 @@ const SignUp = () => {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  size="md" 
+                  size="md"
                 />
               </FormControl>
               <FormControl id="password" isRequired>
@@ -115,7 +117,7 @@ const SignUp = () => {
                     type={showPassword ? "text" : "password"}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    size="md" 
+                    size="md"
                   />
                   <InputRightElement width="3rem">
                     {showPassword ? (
@@ -133,7 +135,7 @@ const SignUp = () => {
                     type={showConfirmPassword ? "text" : "password"}
                     value={confirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
-                    size="md" 
+                    size="md"
                   />
                   <InputRightElement width="3rem">
                     {showConfirmPassword ? (
@@ -148,13 +150,12 @@ const SignUp = () => {
                 colorScheme={"blue"}
                 variant={"solid"}
                 onClick={handleSignUp}
-                size="md" 
+                size="md"
               >
                 Sign up
               </Button>
               <Text mt={2} textAlign="center" fontSize="md" color="black.500">
-                Already have an account?{" "}
-                <Link to="/signin">Sign in</Link>
+                Already have an account? <Link to="/signin">Sign in</Link>
               </Text>
             </Stack>
           </Flex>
