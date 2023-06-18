@@ -2,7 +2,7 @@
 import {Add} from "./Add"
 
 
-import './Dashboard.css';
+// import './Dashboard.css';
 
 
 import {Update} from "./Update"

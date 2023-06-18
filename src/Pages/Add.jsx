@@ -1,5 +1,5 @@
 
-import { Box,Button,Input } from '@chakra-ui/react'
+import { Box,Button,Input ,Center} from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { postdata } from '../Redux/Admin/actions'
@@ -54,14 +54,16 @@ export const Add=({setRen})=>{
         
 
     return <div>
-       <h1>Add Your Products</h1>
+       <h1 style={{textAlign:"center" ,fontSize:"20px",color:"green" ,marginTop:"30px"}}> Add Your Products</h1>
        <Box>
     <Box mt="50px">
+
+      <Center >
 <form onSubmit={handlesubmit}>
 
 
 
-    <Box  bg="teal.200" mt="10px">
+    <Box   mt="10px">
         <Input  value={data.image} onChange={handlechange} name="image"  type="text"  textAlign="center" placeholder="image" h="30px" w="300px" / >
         <br />
        
@@ -75,7 +77,7 @@ export const Add=({setRen})=>{
        
       </Box>
 
-{ourdata===false?<Button  width="150px" mt="10px" bg="#8BC34A" marginLeft="0px" textAlign="center" type="submti"  >
+{ourdata===false? <Button  width="150px" mt="10px" bg="#8BC34A" textAlign="center" type="submti" marginLeft="80px"  >
     
     
     
@@ -88,13 +90,15 @@ export const Add=({setRen})=>{
     loadingText='Submitting'
     colorScheme='teal'
     variant='outline'
-     m="10px" bg="pink.200" width="200px"  marginLeft="0px" textAlign="center"
+     m="10px" bg="pink.200" width="200px" marginLeft="80px" textAlign="center"
   >
     ADD PRODUCT
   </Button>
     
     }
-</form></Box>
+</form>
+</Center>
+</Box>
 </Box>
     </div>
    }

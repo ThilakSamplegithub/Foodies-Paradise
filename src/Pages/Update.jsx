@@ -1,4 +1,4 @@
-import { Box,Button,Input } from '@chakra-ui/react'
+import { Box,Button,Input ,Center} from '@chakra-ui/react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { updatedata } from '../Redux/Admin/actions'
@@ -42,11 +42,15 @@ else{
 
 
     return <div>
-       <h1>Update Your Products</h1>
+
+     
+       <h1 style={{textAlign:"center" ,fontSize:"20px" ,color:"orange",marginTop:"30px"}}>Update Your Products</h1>
        <Box>
     <Box mt="50px">
+    <Center>
 <form onSubmit={handlesubmit}>
-    <Box  bg="teal.200">
+    <Box >
+
     <Input  value={data.id} onChange={handlechange} name="id"  type="number"  textAlign="center" placeholder="Please Enter Id here" mt="10px" h="30px" w="300px"/>
 
     <br />
@@ -66,7 +70,7 @@ else{
         
      
       </Box>
-{ourdata===false?<Button   width="150px" mt="10px" bg="#8BC34A" marginLeft="0px"  textAlign="center" type="submti">
+{ourdata===false?<Button   width="150px" mt="10px" bg="#8BC34A" marginLeft="80px" textAlign="center" type="submti">
     
     
     
@@ -79,13 +83,16 @@ else{
     loadingText='Submitting'
     colorScheme='teal'
     variant='outline'
-    mt="10px" width="150px"  marginLeft="0px"  textAlign="center"
+    mt="10px" width="150px" marginLeft="80px"  textAlign="center"
   >
     UPDATE 
   </Button>
     
     }
-</form></Box>
+</form>
+</Center>
 </Box>
+</Box>
+
     </div>
    } 
