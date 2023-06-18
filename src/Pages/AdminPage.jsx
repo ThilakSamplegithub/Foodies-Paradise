@@ -1,3 +1,7 @@
+
+
+
+
 import { Add } from "./Add";
 
 // import "./Dashboard.css";
@@ -82,3 +86,4 @@ export const AdminPage = () => {
     </div>
   );
 };
+
