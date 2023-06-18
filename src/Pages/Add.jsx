@@ -2,7 +2,7 @@
 import { Box,Button,Input } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { postdata } from '../Redux/Admin/Action'
+import { postdata } from '../Redux/Admin/actions'
 
 
 

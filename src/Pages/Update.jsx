@@ -1,7 +1,7 @@
 import { Box,Button,Input } from '@chakra-ui/react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { updatedata } from '../Redux/Admin/Action'
+import { updatedata } from '../Redux/Admin/actions'
 
 const initialdata={
    id:"",

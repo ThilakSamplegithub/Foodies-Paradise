@@ -3,7 +3,7 @@ import {useState,useReducer,useEffect} from "react"
 
 import axios from "axios";
 import { useDispatch } from "react-redux";
-import { deletedata } from "../Redux/Admin/Action";
+import { deletedata } from "../Redux/Admin/actions";
 
 
 const initialState = {
