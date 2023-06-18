@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import {
   Box,
   Flex,
@@ -16,7 +17,6 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { FaShoppingCart } from "react-icons/fa";
 import UserLogo from "./UserLogo";
-import logo from "../Images/logo.png";
 import Logo from "../Assets/Logo.png";
 
 const Navbar = () => {

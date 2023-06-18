@@ -9,15 +9,15 @@ img {
 }
 .App {
   min-height: 100vh;
-  width: 100%;
-  max-width: auto;
+  /* width: 100%; */
+  /* max-width: auto; */
   margin: 0rem auto;
 }
-/* body {
+body {
   width: 100%;
-  overflow-x: hidden;
-  background-color: #f6f6f6;
-} */
+  /* overflow-x: hidden; */
+  /* background-color: #f6f6f6; */
+}
 
 body {
   background-color: #f6f6f6;

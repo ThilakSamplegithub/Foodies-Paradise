@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage";
-import AdminPage from "./AdminPage";
+import { AdminPage } from "./AdminPage";
 import ProductPage from "./ProductPage";
 import AddToCartPage from "./AddToCartPage";
 import SingleProductPage from "./SingleProductPage";
@@ -18,7 +18,7 @@ export const MainRoutes = () => {
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />
 
-      <Route path="/checkout" element={<CheckoutPage/>} />
+      <Route path="/checkout" element={<CheckoutPage />} />
 
       <Route path="*" element={<h1>404 PAGE NOT FOUND</h1>} />
     </Routes>
