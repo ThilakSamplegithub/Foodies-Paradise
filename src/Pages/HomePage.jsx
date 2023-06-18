@@ -1,3 +1,4 @@
+
 import React from "react";
 import BannerBackground from "../Assets/home-banner-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
@@ -8,13 +9,19 @@ import Testimonial from "../Components/Testimonial";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
 import { FiArrowRight } from "react-icons/fi";
-// import { Link } from "react-router-dom";
+
 import { useNavigate } from "react-router-dom";
+
+import { Box } from '@chakra-ui/react'
+import React from 'react'
+import Navbar from '../Components/Navbar'
+
 
 const HomePage = () => {
   const navigate = useNavigate();
 
   return (
+
     <>
       <div>
         <Navbar />
@@ -53,5 +60,6 @@ const HomePage = () => {
     </>
   );
 };
+
 
 export default HomePage;

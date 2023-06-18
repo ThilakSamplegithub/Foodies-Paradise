@@ -17,7 +17,9 @@ export const MainRoutes = () => {
       <Route path="/singleProductPage/:id" element={<SingleProductPage />} />
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />
-      <Route path="/checkoutPage" element={<CheckoutPage />} />
+
+      <Route path="/checkout" element={<CheckoutPage/>} />
+
       <Route path="*" element={<h1>404 PAGE NOT FOUND</h1>} />
     </Routes>
   );

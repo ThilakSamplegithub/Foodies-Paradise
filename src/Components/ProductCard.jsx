@@ -1,7 +1,13 @@
 import { Card,CardBody, CardFooter,Button,Divider,Text,Heading,ButtonGroup,Stack,Image, Flex} from '@chakra-ui/react'
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import { Link as RouterLink} from "react-router-dom"
+import { addToCart } from '../Redux/Products/actions'
 const ProductCard = ({id,name,category,image,price}) => {
+  const dispatch=useDispatch()
+  const handleAddToCart=()=>{
+    dispatch(addToCart(id))
+  }
   return (
     <Card maxW='sm'>
   <CardBody>
@@ -27,7 +33,7 @@ const ProductCard = ({id,name,category,image,price}) => {
       <Button variant='solid' colorScheme='blue'>
         Buy now
       </Button>
-      <Button variant='ghost' colorScheme='blue'>
+      <Button variant='ghost' colorScheme='blue' onClick={handleAddToCart} >
         Add to cart
       </Button></Stack>
     </ButtonGroup>
