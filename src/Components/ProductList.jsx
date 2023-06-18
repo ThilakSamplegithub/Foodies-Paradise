@@ -11,7 +11,7 @@ const ProductList = ({ products }) => {
   return (
     <Flex gap={"10px"}>
     <Sidebar/>
-      <Box ><Grid
+      <Box  ><Grid
         templateColumns={{
           base: `repeat(${baseOne},${xtraFr})`,
           md: `repeat(${medium},${xtraFr})`,
