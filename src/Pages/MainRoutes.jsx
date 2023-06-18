@@ -6,6 +6,7 @@ import AddToCartPage from "./AddToCartPage";
 import SingleProductPage from "./SingleProductPage";
 import SignIn from "./SignInPage";
 import SignUp from "./SignUpPage";
+import CheckoutPage from "./CheckoutPage";
 export const MainRoutes = () => {
   return (
     <Routes>
@@ -16,6 +17,7 @@ export const MainRoutes = () => {
       <Route path="/singleProductPage/:id" element={<SingleProductPage />} />
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />
+      <Route path="/checkout" element={<CheckoutPage/>} />
       <Route path="*" element={<h1>404 PAGE NOT FOUND</h1>} />
     </Routes>
   );
