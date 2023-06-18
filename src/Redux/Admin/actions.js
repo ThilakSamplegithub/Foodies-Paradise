@@ -1,6 +1,6 @@
 
 import axios from "axios";
-import { postreq,postsucc,postfail, deletereq, deletesucc,deletefail, updatereq, updatesucc, updatefail } from "./ActionTypes";
+import { postreq,postsucc,postfail, deletereq, deletesucc,deletefail, updatereq, updatesucc, updatefail } from "./actionTypes";
 export const postrequest=()=>{
     return {type:postreq}
 }
