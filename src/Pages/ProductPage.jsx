@@ -9,6 +9,7 @@ import {
 import ProductList from "../Components/ProductList";
 import { useSearchParams } from "react-router-dom";
 import AddToCartPage from "./AddToCartPage";
+import Navbar from "../Components/Navbar";
 const ProductPage = () => {
   const dispatch = useDispatch();
   const {isLoading,products,isError}=useSelector(state=>state.productReducer)
@@ -31,7 +32,8 @@ const ProductPage = () => {
   <Skeleton height='20px' />
   <Skeleton height='20px' />
 </Stack>:isError?<Heading color={"red"}>Something went wrong</Heading>:<Box>
-     <ProductList products={products}/>
+      <Navbar />
+     <ProductList  products={products}/>
      
   </Box>;
 };
