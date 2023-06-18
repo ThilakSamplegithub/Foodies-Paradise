@@ -17,10 +17,11 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
-import logo from "../Images/logo.png"
+import logo from "../Assets/Logo.png";
 import { signinRequest } from '../Redux/Authentication/actions';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Navbar from '../Components/Navbar';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -59,6 +60,7 @@ const SignIn = () => {
 
   return (
     <>
+      <Navbar/>
       <ToastContainer />
       <Flex minH={'100vh'} align={'center'} justify={'center'} bg={'gray.100'}>
         <Box
