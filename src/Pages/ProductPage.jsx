@@ -8,6 +8,7 @@ import {
 } from "../Redux/Products/actionTypes";
 import ProductList from "../Components/ProductList";
 import { useSearchParams } from "react-router-dom";
+import AddToCartPage from "./AddToCartPage";
 const ProductPage = () => {
   const dispatch = useDispatch();
   const {isLoading,products,isError}=useSelector(state=>state.productReducer)
@@ -31,6 +32,7 @@ const ProductPage = () => {
   <Skeleton height='20px' />
 </Stack>:isError?<Heading color={"red"}>Something went wrong</Heading>:<Box>
      <ProductList products={products}/>
+     
   </Box>;
 };
 
