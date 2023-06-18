@@ -7,23 +7,40 @@ import {
   Input,
   Stack,
   Image,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import creditcard from "../Images/creditcard.webp";
 import Navbar from "../Components/Navbar";
-
+import { useNavigate } from "react-router-dom";
 export default function CheckoutPage() {
   const [isPaymentSubmitted, setIsPaymentSubmitted] = useState(false);
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const navigate = useNavigate();
 
+  const handleAddress = () => {
+    setIsPaymentSubmitted(true);
+  };
   const handlePaymentSubmit = () => {
     // Handle payment submission logic here
-    setIsPaymentSubmitted(true); // payment button disable and enable
+    setIsPaymentSubmitted(true); 
+    onOpen();
+    setTimeout(() => {
+      onClose(); 
+      navigate("/products"); 
+    }, 3000);
   };
 
   return (
     <>
       <Navbar />
-      <Stack
+      <Stack mt={16}
         minH={"100vh"}
         direction={{ base: "column", md: "row" }}
         bg={"gray.100"}
@@ -70,7 +87,7 @@ export default function CheckoutPage() {
             <Button
               colorScheme={"blue"}
               variant={"solid"}
-              onClick={handlePaymentSubmit}
+              onClick={handleAddress}
               isDisabled={isPaymentSubmitted}
             >
               Proceed to Payment
@@ -130,6 +147,19 @@ export default function CheckoutPage() {
           </Stack>
         </Flex>
       </Stack>
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Thank You for Shopping!</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Heading size="md">
+              Your payment has been successfully submitted.
+            </Heading>
+            <p>You will be redirected to the product page shortly.</p>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
     </>
   );
 }

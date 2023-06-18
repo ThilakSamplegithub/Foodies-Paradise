@@ -8,10 +8,8 @@ import Testimonial from "../Components/Testimonial";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
 import { FiArrowRight } from "react-icons/fi";
-
 import { useNavigate } from "react-router-dom";
 
-import { Box } from "@chakra-ui/react";
 
 const HomePage = () => {
   const navigate = useNavigate();

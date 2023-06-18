@@ -9,7 +9,7 @@ import {
   updatereq,
   updatesucc,
   updatefail,
-} from "./ActionTypes";
+} from "./actionTypes";
 export const postrequest = () => {
   return { type: postreq };
 };
