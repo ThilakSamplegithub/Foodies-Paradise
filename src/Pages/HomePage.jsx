@@ -1,4 +1,3 @@
-
 import React from "react";
 import BannerBackground from "../Assets/home-banner-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
@@ -15,9 +14,8 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   return (
-
     <>
-      <div>
+      <div> 
         <Navbar />
       </div>
       <div style={{ margin: "3rem" }} className="home-container">
@@ -54,6 +52,5 @@ const HomePage = () => {
     </>
   );
 };
-
 
 export default HomePage;

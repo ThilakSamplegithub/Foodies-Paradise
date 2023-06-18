@@ -19,7 +19,8 @@ import { useDispatch } from "react-redux";
 import { signupRequest } from "../Redux/Authentication/actions";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import logo from "../Images/logo.png";
+import logo from "../Assets/Logo.png";
+import Navbar from "../Components/Navbar";
 
 const SignUp = () => {
   const [username, setUsername] = useState("");
@@ -71,6 +72,7 @@ const SignUp = () => {
   return (
     <>
       <ToastContainer />
+      <Navbar/>
       <Flex minH={"100vh"} align={"center"} justify={"center"} bg={"gray.100"}>
         <Box
           w={"80%"}

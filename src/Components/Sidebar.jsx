@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-const Sidebar = () => {
+const Sidebar = ({searching}) => {
   const [searchParams, setSearchParams] = useSearchParams("");
   const initialVeg = searchParams.getAll("category");
   const [category, setCategory] = useState(initialVeg || []);
@@ -28,8 +28,9 @@ const Sidebar = () => {
   useEffect(() => {
     let param = { category };
     order && (param.order = order);
+    searching&&(param.q=searching)
     setSearchParams(param);
-  }, [category, order]);
+  }, [category, order,searching]);
   let handleFruit = (e) => {
     let newFruit = [...category];
     newFruit.includes("fruit")
