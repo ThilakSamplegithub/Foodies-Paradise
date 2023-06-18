@@ -13,9 +13,6 @@ import { FiArrowRight } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 
 import { Box } from '@chakra-ui/react'
-import React from 'react'
-import Navbar from '../Components/Navbar'
-
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -23,7 +20,7 @@ const HomePage = () => {
   return (
 
     <>
-      <div>
+      <div> 
         <Navbar />
       </div>
       <div style={{ margin: "3rem" }} className="home-container">

@@ -61,11 +61,16 @@ export const reducer = (state = initialState, { type, payload }) => {
       return { ...state, isLoading: false, cartArr: updatedQuan };
     }
     case TOTAL_PRICE: {
-      const total_price = state.cartArr.reduce(
-        (accum, curr) => accum + curr.quantity * curr.price,
-        0
+      const {total_price,total_Quantity} = state.cartArr.reduce(
+        (accum, curr) =>{ accum.total_price += curr.quantity * curr.price
+          accum.total_Quantity+=curr.quantity
+          return accum
+        },
+        {total_price:0,
+          total_Quantity:0
+        }
       );
-      return { ...state, isLoading: false, totalPrice: total_price };
+      return { ...state, isLoading: false, totalPrice: total_price,totalQuantity:total_Quantity };
     }
     default: {
       return state;
