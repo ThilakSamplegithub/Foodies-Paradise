@@ -37,7 +37,10 @@ const SignIn = () => {
   try {
     const response = await dispatch(signinRequest(credentials));
     const successMessage = 'Signed in successfully';
-
+ if (response && response === '/admin') {
+        navigate('/admin');
+        return;
+      }
     if (response.type === 'SIGNIN_FAILURE') {
       toast.error('Invalid credentials');
     } else {

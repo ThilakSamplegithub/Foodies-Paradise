@@ -20,6 +20,7 @@ import {
   totalCartPrice,
 } from "../Redux/Products/actions";
 import TotalCart from "../Components/TotalCart";
+import Navbar from "../Components/Navbar";
 
 const AddToCartPage = () => {
   const [addToCartArr, setCartArr] = useState([]);
@@ -39,7 +40,8 @@ const AddToCartPage = () => {
     <Heading>Your Cart is Empty</Heading>
   ) : (
     <Box>
-      <TableContainer>
+      <Navbar />
+      <TableContainer mt={"60px"}>
         <Table variant="striped" colorScheme="teal">
           <TableCaption>Imperial to metric conversion factors</TableCaption>
           <Thead>
