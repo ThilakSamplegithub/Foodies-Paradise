@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# Foodies Paradise
+an ecommerce Website 🚀🎯
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![LOGO FOODIES PARADISE]
 
-## Available Scripts
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This project is a clone of the popular e-commerce website, It functions similarly to the original platform, allowing users to create accounts, buy and sell products and leave feedback for transactions. The website features various categories for products of food and more.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Secure user authentication and authorization
+- User profiles for buying products
+- Categories for organizing products
+- Listing creation for including descriptions, images, and pricing on admin page
+- Checkout process for buyers to purchase products
+- Sort by Price
+- Filter by categories
+- Multiple filters functionality
+- Add to Cart | Delete from Cart | Proceed to checkout
+- payment, checkout functionality
+- Admin side full Crud operation we have done
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `HTML`
+- `CSS`
+- `Javascript`
+- `React`
+- `Redux`
+- `Node.js`
+- `Chakra UI`
+- `Material UI`
+- `React Router`
 
-### `npm run build`
+## Demo 
+- Landing Page
+![Screenshot (52)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/93505113-ba5a-4d6a-a801-8ed0f0dae6db)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**GUIDE :** `⬇️ If you click on shop by categories, you can able to see the following Interface` and here are all different functionalities you can sort by price and you can choose vegetable and all different functionalities are on this page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Screenshot (50)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/33f436de-69dc-46da-9c6e-4a9e5fc16690)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**GUIDE :** `If you click on add to Cart You can see the below alert and item will be added to Cart`
+![Screenshot (54)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/c49ccf6b-528a-4d05-814b-19e36e9baaf3)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+**GUIDE :** `⬇️If you click on any product You can see the below page⬇️`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot 2023-04-03 132039](https://user-images.githubusercontent.com/110609653/229448001-ccd10891-62c5-475f-a306-ad24f0eb9cd9.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**GUIDE :** `⬇️This is the Cart Page, here you can see all Products which you have added to cart⬇️` on right side there are payment details of your cart products
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Screenshot 2023-04-03 132241](https://user-images.githubusercontent.com/110609653/229448005-027986aa-48f3-4a8e-9815-0902fd2e5774.png)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+**GUIDE :** `⬇️When you click on cart you will be redirected to Login Page only if you are not Logged in ⬇️` 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Screenshot (51)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/905fad95-dc81-41cb-8486-d53f730dda6b)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**GUIDE :** `⬇️ After Logged in you can see the below interface for Payments details ⬇️` Here you can fill all the details and  after clicking on place order you order will be placed successfully 🥳🥳🥳
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot (55)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/47d13094-a240-4dcf-b5ce-3e8c8d89f713)
+![Screenshot (56)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/93182a42-48a0-4a24-a3d5-d5d75b5548ca)
+
+Admin side(Crud)
+**GUIDE :** `click on admin button then it will redirected to login then by filling credential it will be shown `
+
+![Screenshot (48)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/51ca6836-bbe9-4549-8125-41d42017a9a7)
+![Screenshot (49)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/4ea51b4a-5553-4e4f-a7f0-779894b696c8)
+
+
+
+
+
+## Getting Started
+
+To get started with the project, follow these steps:
+
+1. Clone the repository
+2. Install dependencies using `npm install`
+3. Open the application in your browser at `http://localhost:3000`
+
+## Our Contributers
+1.Ankit kumar 
+2.Devnandan Raj Sharma
+3.Satya Indra Dev
+4.Thakur Thilak
+
+
+## Contributing
+
+Contributions to the project are welcome! To contribute, follow these steps:
+
+1. Fork the repository
+2. Create a new branch for your changes
+3. Make your changes and commit them
+4. Push your changes to your fork
+5. Create a pull request
+
+
+
+
