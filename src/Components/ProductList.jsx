@@ -2,7 +2,7 @@ import React from "react";
 import ProductCard from "./ProductCard";
 import { Box, Center, Container, Flex, Grid } from "@chakra-ui/react";
 import Sidebar from "./Sidebar";
-const ProductList = ({ products,searching }) => {
+const ProductList = ({ products,search }) => {
   console.log(products);
   const xtraLN = 4;
   const xtraFr = "1fr";
@@ -10,7 +10,7 @@ const ProductList = ({ products,searching }) => {
    const baseOne = 1;
   return (
     <Flex mt="200px" ml={"20px"} gap={"10px"}>
-    <Sidebar searching={searching}/>
+    <Sidebar/>
       <Box ><Grid
         templateColumns={{
           base: `repeat(${baseOne},${xtraFr})`,
