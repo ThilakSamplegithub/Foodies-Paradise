@@ -33,6 +33,14 @@ This project is a  e-commerce website for grocery shopping,It allows users to cr
 - `Material UI`
 - `React Router`
 
+## Folder Structure
+- `/src`: Contains the source code for the React application
+- `/components`: Reusable UI components
+- `/pages`: Individual pages of the website
+- `/redux`: Redux actions, reducers, and store configuration
+- `/styles`: Global styles and theme configuration
+- `/public`: Static assets and index.html file
+
 ## Deployment
 The project is deployed and accessible at https://foodies-paradise.vercel.app/.
 ## Demo 
