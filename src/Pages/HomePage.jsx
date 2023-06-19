@@ -24,12 +24,11 @@ const HomePage = () => {
             <img src={BannerBackground} alt="" />
           </div>
           <div className="home-text-section">
-            <h1 className="primary-heading">
-              Your Favourite Food Delivered Hot & Fresh
+           <h1 className="primary-heading">
+              Fresh Grocery Items Delivered to Your Doorstep
             </h1>
             <p className="primary-text">
-              Healthy switcher chefs do all the prep work, like peeding,
-              chopping & marinating, so you can cook a fresh food.
+              Our dedicated team ensures that your grocery items, including vegetables, dairy products, and bakery items, are carefully selected and delivered fresh to your home.
             </p>
             <button
               className="secondary-button"

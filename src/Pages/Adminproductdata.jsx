@@ -141,4 +141,3 @@ const xtraLN = 4;
 }
 
 export default Product
-

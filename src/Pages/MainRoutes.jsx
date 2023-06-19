@@ -9,13 +9,21 @@ import SingleProductPage from "./SingleProductPage";
 import SignIn from "./SignInPage";
 import SignUp from "./SignUpPage";
 import CheckoutPage from "./CheckoutPage";
+import { PrivateRoute } from "../Components/PrivateRoute";
 export const MainRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/admin" element={<AdminPage />} />
       <Route path="/products" element={<ProductPage />} />
-      <Route path="/addToCart" element={<AddToCartPage />} />
+      <Route
+        path="/addToCart"
+        element={
+          <PrivateRoute>
+            <AddToCartPage />
+          </PrivateRoute>
+        }
+      />
       <Route path="/singleProductPage/:id" element={<SingleProductPage />} />
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />

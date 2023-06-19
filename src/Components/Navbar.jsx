@@ -90,7 +90,7 @@ const Navbar = () => {
               <Box as={Link} to="/addToCart" fontSize="2xl">
                 <FaShoppingCart size={30} />
               </Box>
-              <Box as={Link} to="/admin">
+              <Box as={Link} to="/signin">
                 Admin
               </Box>
               <Box>
@@ -130,7 +130,7 @@ const Navbar = () => {
               <Box as={Link} to="/addToCart" fontSize="2xl">
                 <FaShoppingCart size={30} />
               </Box>
-              <Box as={Link} to="/admin">
+              <Box as={Link} to="/signin">
                 Admin
               </Box>
               <Box>
