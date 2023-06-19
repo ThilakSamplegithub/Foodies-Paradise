@@ -33,6 +33,8 @@ This project is a  e-commerce website for grocery shopping,It allows users to cr
 - `Material UI`
 - `React Router`
 
+## Deployment
+The project is deployed and accessible at https://foodies-paradise.vercel.app/.
 ## Demo 
 - Landing Page
 ![Screenshot (52)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/93505113-ba5a-4d6a-a801-8ed0f0dae6db)
