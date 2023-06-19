@@ -1,7 +1,7 @@
 # Foodies Paradise
 an ecommerce Website 🚀🎯
 
-![LOGO FOODIES PARADISE]
+![foodies-paradise-logo](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/97b1c45f-b9e1-4862-9763-8a1d7c168b33)
 
 
 ## Overview
