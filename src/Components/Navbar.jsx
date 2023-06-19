@@ -20,15 +20,14 @@ import UserLogo from "./UserLogo";
 import Logo from "../Assets/Logo.png";
 
 const Navbar = () => {
-  // const id=useRef(0)
   const { isOpen, onToggle, onClose } = useDisclosure();
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
         onClose();
       }
     };
-
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -48,7 +47,7 @@ const Navbar = () => {
         </Box>
         <Spacer />
         <Box display={{ base: "none", md: "block" }} width="40%" bg={"white"}>
-          <Input placeholder="Search" />
+          <Input placeholder="Search"  />
         </Box>
         <Spacer />
         <Box

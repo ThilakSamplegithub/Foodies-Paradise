@@ -1,7 +1,8 @@
-import React, { useEffect,useState } from "react";
+
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../Redux/Products/actions";
-import { Box, Heading, Skeleton, Stack } from '@chakra-ui/react'
+import { Box, FormControl, Heading, Input, Skeleton, Stack } from '@chakra-ui/react'
 import {
   PRODUCT_FAILURE,
   PRODUCT_SUCCESS,
@@ -12,14 +13,22 @@ import AddToCartPage from "./AddToCartPage";
 import Navbar from "../Components/Navbar";
 const ProductPage = () => {
   const dispatch = useDispatch();
-  const {isLoading,products,isError}=useSelector(state=>state.productReducer)
-  const [searchParams]=useSearchParams("")
-  const [searching,setSearching]=useState("")
-  let paramObj={
-    params:{
-      category:searchParams.getAll("category"),
-      _sort:searchParams.get("order")&&"price",
-      _order:searchParams.get("order"),
+  const { isLoading, products, isError } = useSelector(state => state.productReducer)
+  const [searchParams] = useSearchParams("")
+  // const initialSearch = searchParams.get("q")
+  // const [q, setSearching] = useState(initialSearch || "")
+  // useEffect(()=>{
+  //   let id
+  //   return(()=>{
+  //     id&&clearTimeout(id)
+  //     id=setTimeout(()=>{setSearchParams({q})},2000)
+  //   })
+  // },[q])
+  let paramObj = {
+    params: {
+      category: searchParams.getAll("category"),
+      _sort: searchParams.get("order") && "price",
+      _order: searchParams.get("order"),
     }
   }
   useEffect(() => {
@@ -27,17 +36,14 @@ const ProductPage = () => {
       .then((res) => dispatch({ type: PRODUCT_SUCCESS, payload: res }))
       .catch((err) => dispatch({ type: PRODUCT_FAILURE }));
   }, [searchParams]);
-  console.log(products)
-  
-  return isLoading?<Stack>
-  <Skeleton height='20px' />
-  <Skeleton height='20px' />
-  <Skeleton height='20px' />
-</Stack>:isError?<Heading color={"red"}>Something went wrong</Heading>:<Box>
-      <Navbar />
-     <ProductList  searching={searching} products={products}/>
-     
+  // console.log(q,"in queryParams")
+  return isLoading ? <Stack>
+    <Skeleton height='20px' />
+    <Skeleton height='20px' />
+    <Skeleton height='20px' />
+  </Stack> : isError ? <Heading color={"red"}>Something went wrong</Heading> : <Box>
+    <Navbar />
+    <ProductList products={products} />
   </Box>;
 };
-
 export default ProductPage;
