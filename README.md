@@ -86,10 +86,12 @@ To get started with the project, follow these steps:
 3. Open the application in your browser at `http://localhost:3000`
 
 ## Our Contributers
-1.Ankit kumar 
-2.Devnandan Raj Sharma
-3.Satya Indra Dev
-4.Thakur Thilak
+
+
+1.Ankit kumar </br>
+2.Devnandan Raj Sharma </br>
+3.Satya Indra Dev </br>
+4.Thakur Thilak </br>
 
 
 ## Contributing
