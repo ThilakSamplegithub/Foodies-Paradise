@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+
 import {
   Box,
   Flex,
@@ -19,8 +20,8 @@ import UserLogo from "./UserLogo";
 import Logo from "../Assets/Logo.png";
 
 const Navbar = () => {
+  // const id=useRef(0)
   const { isOpen, onToggle, onClose } = useDisclosure();
-
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {

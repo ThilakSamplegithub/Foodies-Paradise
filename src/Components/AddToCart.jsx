@@ -4,11 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { decrementFunc, incrementFunc } from "../Redux/Products/actions";
 
 const AddToCart = ({ id, image, name, price, quantity, handleRemove }) => {
-  // const [quantity, setQuantity] = useState(1);
   const dispatch = useDispatch();
   const { carArr } = useSelector((state) => state.productReducer);
-
-  useEffect(() => {}, [quantity]);
   return (
     <Tbody>
       <Tr>

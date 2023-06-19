@@ -10,13 +10,12 @@ import Footer from "../Components/Footer";
 import { FiArrowRight } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 
-
 const HomePage = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      <div>
+      <div> 
         <Navbar />
       </div>
       <div style={{ margin: "3rem" }} className="home-container">

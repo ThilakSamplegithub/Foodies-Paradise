@@ -30,10 +30,7 @@ const ProductCard = ({id,name,category,image,price}) => {
   <CardFooter>
     <ButtonGroup spacing={{base:0,md:2}}>
     <Stack>
-      <Button variant='solid' colorScheme='blue'>
-        Buy now
-      </Button>
-      <Button variant='ghost' colorScheme='blue' onClick={handleAddToCart} >
+      <Button variant='ghost' colorScheme='blue'  onClick={handleAddToCart} >
         Add to cart
       </Button></Stack>
     </ButtonGroup>
