@@ -39,8 +39,15 @@ This project is a  e-commerce website for grocery shopping,It allows users to cr
 
 **GUIDE :** `⬇️ If you click on shop by categories, you can able to see the following Interface` and here are all different functionalities you can sort by price and you can choose vegetable and all different functionalities are on this page
 
+**GUIDE :** `⬇️If you click on any product You can see the below page⬇️`
+
 ![Screenshot (50)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/33f436de-69dc-46da-9c6e-4a9e5fc16690)
 
+
+
+**GUIDE :** `⬇️When you click on cart you will be redirected to Login Page only if you are not Logged in ⬇️` 
+
+![Screenshot (51)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/905fad95-dc81-41cb-8486-d53f730dda6b)
 
 
 
@@ -49,22 +56,9 @@ This project is a  e-commerce website for grocery shopping,It allows users to cr
 
 
 
-**GUIDE :** `⬇️If you click on any product You can see the below page⬇️`
-
-
-![Screenshot 2023-04-03 132039](https://user-images.githubusercontent.com/110609653/229448001-ccd10891-62c5-475f-a306-ad24f0eb9cd9.png)
-
-
-**GUIDE :** `⬇️This is the Cart Page, here you can see all Products which you have added to cart⬇️` on right side there are payment details of your cart products
-
-
-![Screenshot 2023-04-03 132241](https://user-images.githubusercontent.com/110609653/229448005-027986aa-48f3-4a8e-9815-0902fd2e5774.png)
 
 
 
-**GUIDE :** `⬇️When you click on cart you will be redirected to Login Page only if you are not Logged in ⬇️` 
-
-![Screenshot (51)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/905fad95-dc81-41cb-8486-d53f730dda6b)
 
 
 **GUIDE :** `⬇️ After Logged in you can see the below interface for Payments details ⬇️` Here you can fill all the details and  after clicking on place order you order will be placed successfully 🥳🥳🥳
