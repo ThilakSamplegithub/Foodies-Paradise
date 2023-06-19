@@ -6,7 +6,7 @@ an ecommerce Website 🚀🎯
 
 ## Overview
 
-This project is a  e-commerce website for grocery shopping, It functions similarly to the original platform, allowing users to create accounts, buy and sell products and leave feedback for transactions. The website features various categories for products of food and more.
+This project is a  e-commerce website for grocery shopping,It allows users to create accounts, buy and leave feedback for transactions. The website features various categories for products of food and more.
 
 ## Features
 
@@ -29,7 +29,6 @@ This project is a  e-commerce website for grocery shopping, It functions similar
 - `Javascript`
 - `React`
 - `Redux`
-- `Node.js`
 - `Chakra UI`
 - `Material UI`
 - `React Router`
