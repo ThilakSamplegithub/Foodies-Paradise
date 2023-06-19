@@ -1,5 +1,5 @@
 # Foodies Paradise
-Welcome to our GitHub repository! Here, you'll find the code for our innovative groceries e-commerce website,Foodies Paradise designed to provide a seamless and convenient shopping experience for all your grocery needs. Join us as we revolutionize the way you shop for groceries online. 🚀🎯
+Welcome to our GitHub repository! Here, you'll find the code for our innovative groceries e-commerce website, `Foodies Paradise` designed to provide a seamless and convenient shopping experience for all your grocery needs. Join us as we revolutionize the way you shop for groceries online. 🚀🎯
 
 ![foodies-paradise-logo](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/97b1c45f-b9e1-4862-9763-8a1d7c168b33)
 
