@@ -42,7 +42,7 @@ This project is a  e-commerce website for grocery shopping,It allows users to cr
 - `/public`: Static assets and index.html file
 
 ## Deployment
-The project is deployed and accessible at https://foodies-paradise.vercel.app/.
+The project is deployed and accessible at https://649019f994a8663fb7b93867--sprightly-lolly-ea509d.netlify.app/.
 ## Demo 
 - Landing Page
 ![Screenshot (52)](https://github.com/ThilakSamplegithub/gorgeous-flight-7504/assets/112754841/93505113-ba5a-4d6a-a801-8ed0f0dae6db)
